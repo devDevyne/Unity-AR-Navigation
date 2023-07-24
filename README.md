@@ -88,3 +88,31 @@ Android 10.0(APL level 29)을 타켓 API으로 설정한다.
 
 # WorldScaleAR 
 
+아까 Mapbox SDK 임포트 후 token key를 submit하고 Map Prefabs에서 WorldScaleAR를 불러왔다. 
+그러면 Hierarchy에 WorldAlignmentKit, FocusSquare, InfoCanvas 이렇게 있을 것이다. 
+
+WorldAlignmentKit에 Layer를 몇가지 추가해야 한다. 
+
+![image](https://github.com/devDevyne/Unity-AR-Navigation/assets/55376183/e6584472-6e29-4ab1-861d-e30c8b8a8a10)
+
+* ARGameObject
+* Map
+* Path
+* Both
+
+위에 요소들을 Layer에 추가한다. 
+
+![image](https://github.com/devDevyne/Unity-AR-Navigation/assets/55376183/c1e0c631-8ed3-4e46-8907-b7b7f2286d1b)
+
+
+WorldAlignmentKit을 보면 여러가지 요소들이 있다. 
+
+* ARRoot - AR 앱을 구축하기 위한 인터페이스 프리펩
+* MapCamera - GPS 추적, AR 위치 및 현재 지도를 바라보는데 필요한 Camera(하향식)
+* ArAlignedMap - 장치 위치 서비스를 사용하여 AR루트에 정렬된 지도, 기본적으로 주황색 디버그 건물을 렌더링.
+* LocationProvider - 지도에 GPS 데이터를 제공
+* DebugCanvas - 디버그 로그
+
+
+
+
